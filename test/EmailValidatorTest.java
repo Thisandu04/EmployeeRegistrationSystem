@@ -9,7 +9,7 @@ class EmailValidatorTest {
 
         EmailValidator emailValidator = new EmailValidator();
 
-        assertFalse(emailValidator.isValidEmail("test@example.com"),"Valid Email should pass");
+        assertTrue(emailValidator.isValidEmail("test@example.com"),"Valid Email should pass");
         assertFalse(emailValidator.isValidEmail("test example.com"),"Email without @ should fail");
         assertFalse(emailValidator.isValidEmail("test@"),"Email without name server should fail");
         assertFalse(emailValidator.isValidEmail("test@.com"),"Email without domain name should fail");
