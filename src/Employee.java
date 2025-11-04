@@ -9,7 +9,7 @@ public class Employee {
         this.email=Email;
     }
     public void displayDetails(){
-        System.out.println("-------Employee Details--------");
+        System.out.println("\n-------Employee Details--------");
         System.out.println("Id: "+id );
         System.out.println("Name: "+name);
         System.out.println("Email: "+email);
